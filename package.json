@@ -1,0 +1,25 @@
+{
+  "name": "lackofbind.ing",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "clean": "rimraf .parcel-cache dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "sharp": "^0.34.1",
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@tailwindcss/vite": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}

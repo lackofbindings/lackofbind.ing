@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+
+@theme {
+    --text-shadow-jinxxy: 2px 2px 0 #ff0018, 4px 4px 0 #ffa52c, 6px 6px 0 #ffff41, 8px 8px 0 #008018, 10px 10px 0 #0000f9, 12px 12px 0 #86007d;
+}
+
+@layer components {
+    .store-button {
+        @apply text-center block font-bold rounded-2xl p-px mb-4 shadow-xl bg-gradient-to-bl from-gray-700 to-transparent hover:shadow-2xl hover:shadow-gray-900 active:shadow transition;
+
+        .store-button-inner {
+            @apply block bg-gray-800 py-2 px-8 rounded-[calc(1rem-1px)] group-hover:bg-gray-800/50 transition-colors;
+        }
+    }
+
+    .link {
+        @apply inline-block mb-2 hover:text-white underline decoration-transparent hover:decoration-white transition;
+    }
+
+    .transition-text-shadow {
+        @apply transition-[text-shadow];
+    }
+}

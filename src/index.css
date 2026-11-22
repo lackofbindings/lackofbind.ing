@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
 @import "@fortawesome/fontawesome-free/css/brands.css";
 
 @theme {
@@ -16,10 +17,13 @@
     }
 
     .link {
-        @apply inline-block mb-2 hover:text-white underline decoration-transparent hover:decoration-white transition;
+        @apply inline-block hover:text-white underline decoration-transparent hover:decoration-white transition;
     }
 
     .transition-text-shadow {
         @apply transition-[text-shadow];
+    }
+    .license-bullet {
+        @apply w-4 h-4 me-1.5 shrink-0 font-bold;
     }
 }

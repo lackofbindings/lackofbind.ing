@@ -6,9 +6,13 @@ export default defineConfig({
     plugins: [
         tailwindcss(),
     ],
-    input: {
-        main: resolve(import.meta.dirname, 'index.html'),
-        license: resolve(import.meta.dirname, 'license/index.html'),
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(import.meta.dirname, 'index.html'),
+                license: resolve(import.meta.dirname, 'license/index.html'),
+            },
+        },
     },
     define: {
         'import.meta.env.VITE_BUILD_DATE': JSON.stringify(new Date().toLocaleDateString())
